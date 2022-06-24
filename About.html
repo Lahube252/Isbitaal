@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background: darkcyan;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: floralwhite;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center; background-color: blue; color: white; padding: 15px;">About Doctors</h1>
+<p><h2 style="text-align: center;">Our Docter</h2></p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="5_1.jpg" alt="Jane" style="width:400px; height: 265px;">
+      <div class="container">
+        <h2>Dr Najeeb</h2>
+        <p class="title">Dr Najeeb</p>
+        <p>Dr Najeeb
+           He completed his undergraduate degree in Bachelors of Medicine & Surgery brilliant He claims that 35 Years ago he used ta and his passion for medical sciences led him to where he is today.</p>
+        <p>Najeeb@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="6_1.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Dr Ahmed Bashe</h2>
+        <p class="title">Academic Director</p>
+        <p>Mr. Bashe is Deputy President and Academic Director of the University. He is responsible for the overall supervision of the Students, Teachers and Curriculum Setting.</p>
+        <p>axmedbashe@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="7_1.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Dr.Ahmed Ese</h2>
+        <p class="title">Founder and President</p>
+        <p>Dr Ahmed is the President of Abaarso Tech University, Since 2010.
+            hes good docter had waker and he is kind man and he Teachers and Curriculum Setting 35 Years ago he used</p>
+        <p>axmedese@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+   
+
+</body>
+</html>
